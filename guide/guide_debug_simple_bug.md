@@ -37,7 +37,9 @@ Deux solutions sont possibles :
 A noter que que toutes les fonctions Python intégrées sont accessibles dans les deux cas.
 
 
-## **6\. Découvrons enfin les **Watchers** (ou *Expressions à surveiller*), qui complètent parfaitement l'outil *Evaluate Expression*. Au lieu de taper manuellement un calcul à chaque pause, vous demandez à PyCharm de recalculer et d'afficher automatiquement vos expressions personnalisées à chaque ligne franchie.
+## **6\. Découvrons enfin les **Watchers** (ou *Expressions à surveiller*)
+
+Ils complètent parfaitement l'outil *Evaluate Expression*. Au lieu de taper manuellement un calcul à chaque pause, vous demandez à PyCharm de recalculer et d'afficher automatiquement vos expressions personnalisées à chaque ligne franchie.
 
 Voici comment configurer et exploiter les Watchers avec notre script de démonstration.
 
