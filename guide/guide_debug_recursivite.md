@@ -5,7 +5,7 @@
 
 Commençons par nous intéresser à la fonction fibonacci simple, sans mémoïsation (``use_memo = False``)
 
-### **1\. Analyser la Pile d'Appels (Call Stack) 🥞**
+### **1\. Analyser la Pile d'Appels (Call Stack)**
 
 La pile d'appels montre l'empilement des fonctions en attente de résolution.
 
