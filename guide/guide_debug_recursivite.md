@@ -24,7 +24,7 @@ La pile d'appels montre l'empilement des fonctions en attente de résolution.
 Quand on est perdu au fond de 5 niveaux de récursivité, on veut souvent remonter d'un cran.
 
 > * **Action :** Une fois arrêté au cœur d'un appel (par exemple quand n \= 1), cliquez sur l'icône de la flèche qui monte **Step Out** (Shift \+ F8).  
-> * **Observation :** PyCharm exécute immédiatement le reste de la fonction actuelle et s'arrête pile au moment où il revient à la fonction parente (à la ligne 21).
+> * **Observation :** PyCharm exécute immédiatement le reste de la fonction actuelle et s'arrête pile au moment où il revient à la fonction parente.
 
 ## Fibonacci avec mémoïsation
 
@@ -32,7 +32,7 @@ La mémoïsation consiste à utiliser un dictionnaire pour stocker les résultat
 
 ### **Étape A : Suivre le dictionnaire en temps réel**
 
-> 1. Placez un point d'arrêt à la ligne 14 ``if n in memoire:``  
+> 1. Placez un point d'arrêt à la ligne ``if n in memoire:``  
 > 2. Lancez le script en mode **Debug**.  
 > 3. Dans l'onglet **Variables** (en bas), faites un clic droit sur la variable memoire et choisissez **Add to Watches**.
 
@@ -48,7 +48,7 @@ La mémoïsation consiste à utiliser un dictionnaire pour stocker les résultat
 
 **Le gain est visible immédiatement :** La fonction ne va pas recalculer fibonacci(1) et fibonacci(0) pour ce n=2. Elle coupe court à la récursivité. Le programme se termine juste après, totalisant **5 appels au lieu de 9**.
 
-Dernière astuce : Les points d'arrêt de ligne vs. de retour**
+Dernière astuce : Les points d'arrêt de ligne vs. de retour
 
 Dans un code récursif, il est parfois difficile de savoir quelle valeur une fonction renvoie réellement à sa fonction parente.
 
