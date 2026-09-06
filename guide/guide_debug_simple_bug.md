@@ -43,32 +43,31 @@ Ils complètent parfaitement l'outil *Evaluate Expression*. Au lieu de taper man
 
 Voici comment configurer et exploiter les Watchers avec notre script de démonstration.
 
-## **1\. Ouvrir l'onglet "Watches"**
+### **1\. Ouvrir l'onglet "Watches"**
 
 > 1. Assurez-vous que votre programme est en pause (par exemple, mettez un point d'arrêt à la ligne ``total \+= prix`` dans la boucle du panier).  
 > 2. Regardez la fenêtre du débogueur en bas de PyCharm.  
 > 3. À côté de l'onglet **Variables**, vous trouverez l'onglet **Watches** (représenté parfois par une icône de lunettes 👓).  
 >    *(Si l'onglet n'est pas visible, cliquez sur la petite icône \+ ou le menu d'affichage de la zone des variables pour l'activer).*
 
-**2\. Ajouter une expression à surveiller**
+### 2\. Ajouter une expression à surveiller**
 
 Il existe deux méthodes très simples pour ajouter un calcul :
 
-## **Méthode 1 : Depuis l'onglet Watches**
+**Méthode 1 : Depuis l'onglet Watches**
 
 > 1. Dans l'onglet **Watches**, cliquez sur le bouton **\+** (Add).  
 > 2. Tapez la formule que vous voulez suivre. Par exemple : total \* 1.20 (pour voir le total TTC fictif avec 20% de TVA).  
 > 3. Appuyez sur **Entrée**.
 
-## **Méthode 2 : Depuis le code ou l'onglet Variables (Plus rapide)**
+**Méthode 2 : Depuis le code ou l'onglet Variables (Plus rapide)**
 
 > 1. Dans l'onglet **Variables**, faites un clic droit sur la variable prix.  
 > 2. Choisissez **Add to Watches**.  
 > 3. PyCharm l'ajoute instantanément à votre liste de surveillance.
 
-## ---
 
-**3\. Exercice pratique : Suivre l'évolution dans la boucle**
+### **3\. Exercice pratique : Suivre l'évolution dans la boucle**
 
 Configurons des Watchers pertinents pour observer la création du panier d'Alice :
 
@@ -78,7 +77,7 @@ Configurons des Watchers pertinents pour observer la création du panier d'Alice
    * prix * 0.90 (pour simuler une réduction immédiate de 10% sur l'article en cours)  
 > 2. Appuyez maintenant sur **F8** (Step Over) à plusieurs reprises pour avancer pas à pas dans la boucle for.
 
-## **Ce que vous allez observer :**
+**Ce que vous allez observer :**
 
 À chaque fois que le débogueur passe à la ligne suivante, la valeur de vos expressions change en direct sous vos yeux dans l'onglet **Watches** :
 
