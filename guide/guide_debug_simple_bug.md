@@ -4,12 +4,12 @@ Pour lancer le mode debug, faites un **clic droit dans le code** et choisissez *
 
 ## **1\. Les Points d'Arrêt (Breakpoints)**
 
-> * **Action :** Cliquez dans la marge gauche à côté de la ligne ``reduction = calculer_remise(total_brut, code_actif)`` (ligne 41). Un point rouge apparaît.  
+> * **Action :** Cliquez dans la marge gauche à côté de la ligne ``reduction = calculer_remise(total_brut, code_actif)``. Un point rouge apparaît.  
 > * **Observation :** Relancez le débogueur (bouton **Rerun 'code_debug'**). Le programme s'arrête pile sur cette ligne. Le script est "gelé".
 
 ## **2\. L'inspection et les Points d'Arrêt Conditionnels**
 
-> * **Action :** Faites un **clic droit sur le point rouge** de la ligne 26 (total \+= prix).  
+> * **Action :** Faites un **clic droit sur le point rouge** à la ligne ``total \+= prix``.  
 > * **Condition :** Dans la case *Condition*, écrivez prix \< 20\. Relancez le débogueur.  
 > * **Observation :** Le programme ignore l'ordinateur et la souris. Il s'arrête directement lorsque la boucle traite le "Tapis" (15€).
 
@@ -22,7 +22,7 @@ Une fois arrêté sur la ligne reduction \= calculer\_remise(...) :
 
 ## **4\. Modifier une variable à la volée**
 
-> * **Action :** Avancez (F8) jusqu'à la ligne 8 ``taux_remise = 0.0`` Installez-vous sur la ligne suivante.  
+> * **Action :** Avancez (F8) jusqu'à la ligne ``taux_remise = 0.0`` Installez-vous sur la ligne suivante.  
 > * **Modification :** Dans l'onglet **Variables** en bas, faites un clic droit sur code\_promo, choisissez **Set Value...** et remplacez "VIP" par "BIENVENUE".  
 > * **Observation :** Continuez l'exécution (F8). Le bloc if code\_promo \== "BIENVENUE": va s'exécuter à la place du bloc VIP. Vous avez modifié le comportement du code en direct.
 
@@ -49,8 +49,6 @@ Voici comment configurer et exploiter les Watchers avec notre script de démonst
 > 2. Regardez la fenêtre du débogueur en bas de PyCharm.  
 > 3. À côté de l'onglet **Variables**, vous trouverez l'onglet **Watches** (représenté parfois par une icône de lunettes 👓).  
 >    *(Si l'onglet n'est pas visible, cliquez sur la petite icône \+ ou le menu d'affichage de la zone des variables pour l'activer).*
-
-## ---
 
 **2\. Ajouter une expression à surveiller**
 
